@@ -7,7 +7,7 @@
         <p class="ftr">VR.POLONA 2017</p>
     </div>
     <div class="col-3-6 footer">
-        <a href="https://github.com/PanPablo"><p class="ftr">Created by PanPablo</p></a>
+        <a href="https://github.com/PanPablo"><p class="ftr"></p></a>
     </div>
 </div>
 

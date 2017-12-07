@@ -1,5 +1,10 @@
 @import "_grid.scss";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+@font-face {
+  font-family: 'proximaNova';
+  src: url('../fonts/proximaNova-Reg.otf'),
+  url('../fonts/proximaNova-Reg.otf');
+}
 
 .container {
   width: 95%;
@@ -8,6 +13,7 @@
 
 body {
   background-color: #ececec;
+  margin: 0;
 }
 
 a {
@@ -15,6 +21,13 @@ a {
   color: black;
 }
 
+img {
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+    margin-left: 20px;
+}
+//HEADER//
 
 .header {
   width: 100%;
@@ -27,7 +40,7 @@ a {
 }
 
 .logo {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'proximaNova', sans-serif;
   font-weight: 300;
   font-size: 32px;
   margin: 0;
@@ -36,7 +49,7 @@ a {
 
 span {
   color: #0097e4;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'proximaNova', sans-serif;
 }
 
 .fb {
@@ -56,6 +69,9 @@ span {
 
 }
 
+//SEKCJA MAIN //
+
+
 .main {
   height: 70vh;
   width: 100%;
@@ -74,7 +90,7 @@ span {
 }
 
 .titleMain{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'proximaNova', sans-serif;
   font-weight: 300;
   font-size: 32px;
   color: white;
@@ -91,16 +107,17 @@ span {
 .btn {
   width: 200px;
   height: 75px;
-  border-radius: 20px 20px;
-  font-family: 'Open Sans', sans-serif;
+  border-radius: 30px 30px;
+  font-family: 'proximaNova', sans-serif;
   font-size: 26px;
   font-weight: 300;
-  transition: 1s all;
+  transition: 0.3s all;
   letter-spacing: 3px;
   border: 3px solid white;
   background: transparent;
   color: white;
-  margin-top: 30px;
+  margin-top: 15px;
+  margin-bottom: 20px;
   -webkit-appearance: none;
 }
 
@@ -123,24 +140,24 @@ span {
   background-color: white;
   color: dodgerblue;
   border: 3px solid white;
+  width: 250px;
 }
 
-.nf-form-title {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 28px;
-  font-weight: 300;
-  color: #0097e4;
-  padding-top: 10px;
-  padding-bottom: 20px;
+
+.frontpage {
+  -webkit-box-shadow: 11px 11px 36px -1px rgba(0,0,0,0.66);
+  -moz-box-shadow: 11px 11px 36px -1px rgba(0,0,0,0.66);
+  box-shadow: 11px 11px 36px -1px rgba(0,0,0,0.66);
   margin: 0 auto;
-  display: block;
 }
-
 @media only screen and (max-width: 768px) {
-  .nf-form-title {
-    font-size: 18px;
+  .frontpage {
+    width: 100%;
   }
 }
+
+//FOOTER//////
+
 
 .footer {
 
@@ -164,13 +181,26 @@ span {
 }
 
 .ftr {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'proximaNova', sans-serif;
   font-size: 18px;
   font-weight: 300;
   color: white;
 
 }
 
+
+
+//style formularza
+.nf-form-title {
+  font-family: 'proximaNova', sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  color: #0097e4;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  display: block;
+}
 
 .star {
   margin-right: 25px;
@@ -195,14 +225,20 @@ span {
   box-shadow: 11px 11px 36px -1px rgba(0,0,0,0.66);
   background-color: white;
   display: flex;
-  justify-content: center;
+  //justify-content: center;
   align-items: center;
 }
 
-//style formularza
+
+@media only screen and (max-width: 768px) {
+  .nf-form-title {
+    font-size: 18px;
+  }
+}
+
 
 .nf-form-content label {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'proximaNova', sans-serif;
   font-weight: 300;
   font-size: 22px;
   margin: 0 auto;
@@ -211,7 +247,7 @@ span {
 
 .feat {
   border: 1px solid #0097e4;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'proximaNova', sans-serif;
   font-weight: 300;
   font-size: 20px;
   padding: 10px;
@@ -219,7 +255,7 @@ span {
 
 .featbox {
   width: 60%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'proximaNova', sans-serif;
   font-weight: 300;
   font-size: 20px;
 }
@@ -264,7 +300,7 @@ span {
   }
 
   .nf-form-content label {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'proximaNova', sans-serif;
     font-weight: 300;
     font-size: 18px;
     margin: 0 auto;
@@ -276,14 +312,14 @@ span {
 }
 
 .sendBtn {
-  border-radius: 20px 20px;
+  border-radius: 30px 30px;
   padding: 20px;
   padding-left: 40px;
   padding-right: 40px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'proximaNova', sans-serif;
   font-size: 20px;
   font-weight: 300;
-  transition: 1s all;
+  transition: 0.3s all;
   letter-spacing: 3px;
   border: 1px solid dodgerblue;
   background: transparent;
@@ -298,7 +334,7 @@ span {
 }
 
 .succes {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'proximaNova', sans-serif;
   font-size: 24px;
   font-weight: 300;
   color: #0097e4;
@@ -321,7 +357,7 @@ span {
 }
 
 .about h3 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'proximaNova', sans-serif;
   font-size: 28px;
   font-weight: 300;
   letter-spacing: 3px;
@@ -333,7 +369,7 @@ span {
 }
 
 .about p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'proximaNova', sans-serif;
   color: grey;
 
 }
@@ -349,3 +385,170 @@ span {
 
 }
 
+.news {
+  background-color: white;
+
+}
+
+.news p {
+  margin-left: 70px;
+  margin-right: 50px;
+  padding-left: 80px;
+  padding-right: 80px;
+
+
+}
+
+.news h3 {
+  font-family: 'proximaNova', sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  color: #0097e4;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 140px;
+
+}
+
+.news p {
+  font-family: 'proximaNova', sans-serif;
+  color: grey;
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .news{
+    padding: 10px;
+  }
+
+  .news p {
+    margin-left: 20px;
+    margin-right: 10px;
+    padding: 10px;
+  }
+
+  .news h3 {
+    margin-left: 20px;
+  }
+  p{
+    margin: 10px;
+  }
+
+}
+
+.blueline {
+  width: 80%;
+  height: 3px;
+  background-color: #0097e4;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  margin-top: 20px;
+
+}
+
+.btnBack {
+  width: 150px;
+  height: 50px;
+  border-radius: 30px 30px;
+  font-family: 'proximaNova', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  transition: 0.3s all;
+  letter-spacing: 3px;
+  border: 3px solid dodgerblue;
+  background: transparent;
+  color: dodgerblue;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  -webkit-appearance: none;
+}
+
+.btnBack:hover {
+  background-color: white;
+  color: dodgerblue;
+  border: 3px solid dodgerblue;
+  width: 250px;
+}
+
+.usp-email {
+  border: none;
+}
+
+.usp-submit {
+  border-radius: 30px 30px;
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-family: 'proximaNova', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  transition: 0.3s all;
+  letter-spacing: 2px;
+  border: 1px solid dodgerblue;
+  background: transparent;
+  color: dodgerblue;
+  -webkit-appearance: none;
+  margin: 0 auto;
+}
+
+.usp-submit:hover {
+    background-color: #0097e4;
+    color: white;
+    border: 1px solid #0097e4;
+  }
+
+.usp-input {
+  border: 1px solid #0097e4;
+  font-family: 'proximaNova', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.usp-input:focus {
+  -webkit-box-shadow: 6px 6px 20px -1px rgba(0,0,0,0.66);
+  -moz-box-shadow: 6px 6px 20px -1px rgba(0,0,0,0.66);
+  box-shadow: 6px 6px 20px -1px rgba(0,0,0,0.66);
+  outline: none;
+  border: 3px solid #0097e4;
+}
+
+
+label .user-submitted-email {
+  font-family: 'proximaNova', sans-serif;
+}
+
+#usp_form {
+  margin-left: 100px;
+}
+
+#usp-success-message {
+  font-family: 'proximaNova', sans-serif;
+  color: gray;
+  font-size: 18px;
+  margin: 0 auto;
+  margin-left: 100px;
+}
+
+label {
+  color: white;
+
+}
+
+.sendMail {
+  margin-left: 150px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .sendMail {
+    margin-left: 10px;
+  }
+
+}
+
+.join {
+  font-size: 18px;
+}

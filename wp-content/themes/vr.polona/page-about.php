@@ -21,5 +21,4 @@ if ( have_posts() ) : while ( have_posts() ) :    the_post(); ?>
 <?php else: ?>
   <!-- no posts found -->
 <?php endif; ?>
-
 <?php get_footer();?>
